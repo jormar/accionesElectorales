@@ -1,5 +1,7 @@
 # Acciones en tiempo real
 
+v0.1
+
 Este proyecto es un prototipo experimental pretende simular como sería la dinámica siguiente:
 . Existen cientos de miles de militantes de un partido electoral ejecutando acciones de calle, y reportandolas desde su dispositivo móvil.
 . Existen varios coordinadores y/o Jefes de Campaña Electoral que observan lo que ocurre, en tiempo real.
