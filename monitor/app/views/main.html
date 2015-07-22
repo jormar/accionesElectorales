@@ -1,0 +1,33 @@
+<!--
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+-->
+
+<div class="row">
+  <div class="col-xs-9">
+    <div class="gmap">
+      <ui-gmap-google-map center="map.center" zoom="map.zoom" events="map.events" options="map.options" control="map.control">
+      <!--<ui-gmap-marker models="map.clickedMarker" coords="map.clickedMarker.geometry" idKey="0"></ui-gmap-marker>-->
+        <ui-gmap-markers models="actions" coords="'self'"></ui-gmap-markers>
+      <li ng-repeat="action in actions">
+      </ui-gmap-google-map>
+    </div>
+    <!--lat: {{portServices.lat}} long: {{portServices.long}} -->
+  </div>
+
+  <div class="col-xs-3">
+    <a href="#" ng-click="resetAll()">Vaciar Todo!</a>
+    <ul>
+      <li ng-repeat="action in actions">
+        <p>Acción: {{action.action}}, por {{action.author}} </p>
+      </li>
+    </ul>
+  </div>
+</div>
+

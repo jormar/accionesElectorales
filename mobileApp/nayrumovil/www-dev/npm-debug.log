@@ -1,0 +1,910 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/home/jormar/.nvm/current/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-google-maps',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.4.1
+3 info using node@v0.10.32
+4 verbose node symlink /home/jormar/.nvm/current/bin/node
+5 silly cache add args [ 'angular-google-maps', null ]
+6 verbose cache add spec angular-google-maps
+7 silly cache add parsed spec { raw: 'angular-google-maps',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'angular-google-maps',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed angular-google-maps@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'angular-google-maps', range: '*', hasData: false }
+12 silly mapToRegistry name angular-google-maps
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/angular-google-maps
+16 verbose addNameRange registry:https://registry.npmjs.org/angular-google-maps not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/angular-google-maps
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 20:48:29
+20 verbose request id 6edaea08d9201816
+21 http request GET https://registry.npmjs.org/angular-google-maps
+22 http 200 https://registry.npmjs.org/angular-google-maps
+23 silly get cb [ 200,
+23 silly get   { date: 'Wed, 04 Feb 2015 19:48:30 GMT',
+23 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"EON65BGREUCDEBYA5D5STWDT1"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '10166',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     'x-served-by': 'cache-lhr6320-LHR',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1423079310.065993,VS0,VE156',
+23 silly get     vary: 'Accept',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose get saving angular-google-maps to /home/jormar/.npm/registry.npmjs.org/angular-google-maps/.cache.json
+25 silly addNameRange number 2 { name: 'angular-google-maps', range: '*', hasData: true }
+26 silly addNameRange versions [ 'angular-google-maps', [ '2.0.12' ] ]
+27 verbose addNamed angular-google-maps@2.0.12
+28 silly addNamed semver.valid 2.0.12
+29 silly addNamed semver.validRange 2.0.12
+30 silly mapToRegistry name angular-google-maps
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/angular-google-maps
+34 verbose addRemoteTarball https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.0.12.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.0.12.tgz',
+35 verbose addRemoteTarball   'd18828d5bac40e576b959c911b5426be33586aa6' ]
+36 info retry fetch attempt 1 at 20:48:30
+37 info attempt registry request try #1 at 20:48:30
+38 http fetch GET https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.0.12.tgz
+39 http fetch 200 https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.0.12.tgz
+40 silly fetchAndShaCheck shasum d18828d5bac40e576b959c911b5426be33586aa6
+41 verbose addTmpTarball /tmp/npm-12338-a9eec148/registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.0.12.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for angular-google-maps@2.0.12
+43 silly cache afterAdd angular-google-maps@2.0.12
+44 verbose afterAdd /home/jormar/.npm/angular-google-maps/2.0.12/package/package.json not in flight; writing
+45 verbose afterAdd /home/jormar/.npm/angular-google-maps/2.0.12/package/package.json written
+46 silly install resolved [ { name: 'angular-google-maps',
+46 silly install resolved     version: '2.0.12',
+46 silly install resolved     description: 'AngularJS directives for Google Maps',
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'https://github.com/angular-ui/angular-google-maps.git' },
+46 silly install resolved     scripts:
+46 silly install resolved      { build: 'grunt',
+46 silly install resolved        example: 'grunt example',
+46 silly install resolved        test: 'grunt',
+46 silly install resolved        postinstall: 'bower install && grunt curl' },
+46 silly install resolved     keywords: [ 'angularjs', 'googlemaps', 'directives', 'webcomponent' ],
+46 silly install resolved     main: 'dist/angular-google-maps.js',
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     devDependencies:
+46 silly install resolved      { bower: '~1.3.12',
+46 silly install resolved        'data-structures': '^1.4.2',
+46 silly install resolved        grunt: '~0.4.5',
+46 silly install resolved        'grunt-bump': '0.0.16',
+46 silly install resolved        'grunt-cli': '~0.1.13',
+46 silly install resolved        'grunt-contrib-clean': '~0.6.0',
+46 silly install resolved        'grunt-contrib-coffee': '~0.12.0',
+46 silly install resolved        'grunt-contrib-compress': '~0.12.0',
+46 silly install resolved        'grunt-contrib-concat': '~0.5.0',
+46 silly install resolved        'grunt-contrib-connect': '~0.8.0',
+46 silly install resolved        'grunt-contrib-copy': '~0.6.0',
+46 silly install resolved        'grunt-contrib-jasmine': '~0.8.0',
+46 silly install resolved        'grunt-contrib-jshint': '~0.10.0',
+46 silly install resolved        'grunt-contrib-uglify': '~0.6.0',
+46 silly install resolved        'grunt-contrib-watch': '~0.6.1',
+46 silly install resolved        'grunt-conventional-changelog': '~1.1.0',
+46 silly install resolved        'grunt-curl': '^2.0.3',
+46 silly install resolved        'grunt-debug-task': '^0.1.5',
+46 silly install resolved        'grunt-mkdir': '~0.1.2',
+46 silly install resolved        'grunt-open': '~0.2.3',
+46 silly install resolved        'grunt-replace': '^0.7.9',
+46 silly install resolved        'grunt-subgrunt': '^0.4.1',
+46 silly install resolved        'grunt-template-jasmine-istanbul': '~0.3.0',
+46 silly install resolved        'grunt-template-jasmine-requirejs': '~0.2.0',
+46 silly install resolved        'grunt-verbosity': '^0.2.2',
+46 silly install resolved        'grunt-webpack': '^1.0.8',
+46 silly install resolved        'grunt-wrap': '^0.3.0',
+46 silly install resolved        jsonfile: '^2.0.0',
+46 silly install resolved        lodash: '~2.4.1',
+46 silly install resolved        mocha: '~1.21.4',
+46 silly install resolved        should: '~4.0.4',
+46 silly install resolved        webpack: '^1.4.13',
+46 silly install resolved        'webpack-dev-server': '^1.6.6' },
+46 silly install resolved     gitHead: 'b268a244a9c4ddc7b72db3709c3d12d563fcceb9',
+46 silly install resolved     bugs: { url: 'https://github.com/angular-ui/angular-google-maps/issues' },
+46 silly install resolved     homepage: 'https://github.com/angular-ui/angular-google-maps',
+46 silly install resolved     _id: 'angular-google-maps@2.0.12',
+46 silly install resolved     _shasum: 'd18828d5bac40e576b959c911b5426be33586aa6',
+46 silly install resolved     _from: 'angular-google-maps@*',
+46 silly install resolved     _npmVersion: '2.1.10',
+46 silly install resolved     _nodeVersion: '0.10.31',
+46 silly install resolved     _npmUser: { name: 'nmccready', email: 'nemtcan@gmail.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: 'd18828d5bac40e576b959c911b5426be33586aa6',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.0.12.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.0.12.tgz' } ]
+47 info install angular-google-maps@2.0.12 into /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev
+48 info installOne angular-google-maps@2.0.12
+49 verbose installOne of angular-google-maps to /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev not in flight; installing
+50 verbose lock using /home/jormar/.npm/_locks/angular-google-maps-12fa09bf47fcf971.lock for /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+51 silly install write writing angular-google-maps 2.0.12 to /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+52 silly cache addNamed cb angular-google-maps@2.0.12
+53 verbose unbuild node_modules/angular-google-maps
+54 verbose gentlyRm vacuuming /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+55 verbose tar unpack /home/jormar/.npm/angular-google-maps/2.0.12/package.tgz
+56 verbose tar unpacking to /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+57 verbose gentlyRm vacuuming /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+58 silly gunzTarPerm modes [ '775', '664' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry .npmignore
+61 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+62 silly gunzTarPerm extractEntry clean
+63 silly gunzTarPerm modified mode [ 'clean', 493, 509 ]
+64 silly gunzTarPerm extractEntry .travis.yml
+65 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+66 silly gunzTarPerm extractEntry Gruntfile.coffee
+67 silly gunzTarPerm extractEntry README.markdown
+68 silly gunzTarPerm modified mode [ 'README.markdown', 420, 436 ]
+69 silly gunzTarPerm extractEntry bower.json
+70 silly gunzTarPerm extractEntry circle.yml
+71 silly gunzTarPerm modified mode [ 'circle.yml', 420, 436 ]
+72 silly gunzTarPerm extractEntry coffeelint.json
+73 silly gunzTarPerm modified mode [ 'coffeelint.json', 420, 436 ]
+74 silly gunzTarPerm extractEntry curl.json
+75 silly gunzTarPerm modified mode [ 'curl.json', 420, 436 ]
+76 silly gunzTarPerm extractEntry dist/angular-google-maps.js
+77 silly gunzTarPerm extractEntry dist/angular-google-maps.min.js
+78 silly gunzTarPerm extractEntry dist/angular-google-maps_dev_mapped.js
+79 silly gunzTarPerm extractEntry dist/angular-google-maps_dev_mapped.min.js
+80 silly gunzTarPerm extractEntry dist/angular-google-maps_dev_mapped.js.map
+81 silly gunzTarPerm extractEntry dist/angular-google-maps_dev_mapped.min.js.map
+82 silly gunzTarPerm extractEntry example/.npmignore
+83 silly gunzTarPerm modified mode [ 'example/.npmignore', 420, 436 ]
+84 silly gunzTarPerm extractEntry example/two-maps.html
+85 silly gunzTarPerm modified mode [ 'example/two-maps.html', 420, 436 ]
+86 silly gunzTarPerm extractEntry example/dragzoom.html
+87 silly gunzTarPerm modified mode [ 'example/dragzoom.html', 420, 436 ]
+88 silly gunzTarPerm extractEntry example/dynamic-map-height.html
+89 silly gunzTarPerm modified mode [ 'example/dynamic-map-height.html', 420, 436 ]
+90 silly gunzTarPerm extractEntry example/example.html
+91 silly gunzTarPerm extractEntry example/free-draw-polygons.html
+92 silly gunzTarPerm modified mode [ 'example/free-draw-polygons.html', 420, 436 ]
+93 silly gunzTarPerm extractEntry example/geojson.html
+94 silly gunzTarPerm modified mode [ 'example/geojson.html', 420, 436 ]
+95 silly gunzTarPerm extractEntry example/hugedata.html
+96 silly gunzTarPerm modified mode [ 'example/hugedata.html', 420, 436 ]
+97 silly gunzTarPerm extractEntry example/issue-1009-promise-async.html
+98 silly gunzTarPerm modified mode [ 'example/issue-1009-promise-async.html', 420, 436 ]
+99 silly gunzTarPerm extractEntry example/issue-154-marker-fit.html
+100 silly gunzTarPerm modified mode [ 'example/issue-154-marker-fit.html', 420, 436 ]
+101 silly gunzTarPerm extractEntry example/issue-157-ng-click.html
+102 silly gunzTarPerm modified mode [ 'example/issue-157-ng-click.html', 420, 436 ]
+103 silly gunzTarPerm extractEntry example/issue-322.html
+104 silly gunzTarPerm modified mode [ 'example/issue-322.html', 420, 436 ]
+105 silly gunzTarPerm extractEntry example/issue-354-window-windows-rerender-content.html
+106 silly gunzTarPerm modified mode [ 'example/issue-354-window-windows-rerender-content.html',
+106 silly gunzTarPerm   420,
+106 silly gunzTarPerm   436 ]
+107 silly gunzTarPerm extractEntry example/issue-371-polygon-ng-repeat.html
+108 silly gunzTarPerm modified mode [ 'example/issue-371-polygon-ng-repeat.html', 420, 436 ]
+109 silly gunzTarPerm extractEntry example/issue-382-window-windows-ng-show.html
+110 silly gunzTarPerm modified mode [ 'example/issue-382-window-windows-ng-show.html', 420, 436 ]
+111 silly gunzTarPerm extractEntry example/issue-393-cluster-events-mapped.html
+112 silly gunzTarPerm modified mode [ 'example/issue-393-cluster-events-mapped.html', 420, 436 ]
+113 silly gunzTarPerm extractEntry example/issue-432-markers-fit-clustering.html
+114 silly gunzTarPerm modified mode [ 'example/issue-432-markers-fit-clustering.html', 420, 436 ]
+115 silly gunzTarPerm extractEntry example/issue-482-markers-animation-clustering.html
+116 silly gunzTarPerm modified mode [ 'example/issue-482-markers-animation-clustering.html',
+116 silly gunzTarPerm   420,
+116 silly gunzTarPerm   436 ]
+117 silly gunzTarPerm extractEntry example/issue-482-markers-animation.html
+118 silly gunzTarPerm modified mode [ 'example/issue-482-markers-animation.html', 420, 436 ]
+119 silly gunzTarPerm extractEntry example/issue-484-markers-self.html
+120 silly gunzTarPerm modified mode [ 'example/issue-484-markers-self.html', 420, 436 ]
+121 silly gunzTarPerm extractEntry example/issue-495-polyline-fit.html
+122 silly gunzTarPerm modified mode [ 'example/issue-495-polyline-fit.html', 420, 436 ]
+123 silly gunzTarPerm extractEntry example/issue-498-marker-move-loaded.html
+124 silly gunzTarPerm modified mode [ 'example/issue-498-marker-move-loaded.html', 420, 436 ]
+125 silly gunzTarPerm extractEntry example/issue-504-markers-flash.html
+126 silly gunzTarPerm extractEntry example/issue-507-windows-show-w-marker-broken.html
+127 silly gunzTarPerm modified mode [ 'example/issue-507-windows-show-w-marker-broken.html',
+127 silly gunzTarPerm   420,
+127 silly gunzTarPerm   436 ]
+128 silly gunzTarPerm extractEntry example/issue-522-polyline-no-paths.html
+129 silly gunzTarPerm modified mode [ 'example/issue-522-polyline-no-paths.html', 420, 436 ]
+130 silly gunzTarPerm extractEntry example/issue-534-markers-child-destroy.html
+131 silly gunzTarPerm modified mode [ 'example/issue-534-markers-child-destroy.html', 420, 436 ]
+132 silly gunzTarPerm extractEntry example/issue-538-window-plus1.html
+133 silly gunzTarPerm modified mode [ 'example/issue-538-window-plus1.html', 420, 436 ]
+134 silly gunzTarPerm extractEntry example/issue-545-marker-flash-clusterer.html
+135 silly gunzTarPerm modified mode [ 'example/issue-545-marker-flash-clusterer.html', 420, 436 ]
+136 silly gunzTarPerm extractEntry example/issue-545-marker-flash.html
+137 silly gunzTarPerm modified mode [ 'example/issue-545-marker-flash.html', 420, 436 ]
+138 silly gunzTarPerm extractEntry example/issue-572-polylines-no-paths.html
+139 silly gunzTarPerm modified mode [ 'example/issue-572-polylines-no-paths.html', 420, 436 ]
+140 silly gunzTarPerm extractEntry example/issue-621-owl-w-window.html
+141 silly gunzTarPerm modified mode [ 'example/issue-621-owl-w-window.html', 420, 436 ]
+142 silly gunzTarPerm extractEntry example/assets/images/blue_marker.png
+143 silly gunzTarPerm modified mode [ 'example/assets/images/blue_marker.png', 420, 436 ]
+144 silly gunzTarPerm extractEntry example/assets/images/cluster1.png
+145 silly gunzTarPerm modified mode [ 'example/assets/images/cluster1.png', 420, 436 ]
+146 silly gunzTarPerm extractEntry example/assets/images/plane.png
+147 silly gunzTarPerm modified mode [ 'example/assets/images/plane.png', 420, 436 ]
+148 silly gunzTarPerm extractEntry example/assets/json/many_polygons.json
+149 silly gunzTarPerm modified mode [ 'example/assets/json/many_polygons.json', 420, 436 ]
+150 silly gunzTarPerm extractEntry example/assets/json/polylines.json
+151 silly gunzTarPerm modified mode [ 'example/assets/json/polylines.json', 420, 436 ]
+152 silly gunzTarPerm extractEntry example/assets/scripts/controllers/dragzoom.js
+153 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/dragzoom.js', 420, 436 ]
+154 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-545-marker-flash.js
+155 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-545-marker-flash.js',
+155 silly gunzTarPerm   420,
+155 silly gunzTarPerm   436 ]
+156 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-621-owl-w-window.js
+157 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-621-owl-w-window.js',
+157 silly gunzTarPerm   420,
+157 silly gunzTarPerm   436 ]
+158 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-621-owl.js
+159 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-621-owl.js',
+159 silly gunzTarPerm   420,
+159 silly gunzTarPerm   436 ]
+160 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-538-window-plus1.js
+161 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-538-window-plus1.js',
+161 silly gunzTarPerm   420,
+161 silly gunzTarPerm   436 ]
+162 silly gunzTarPerm extractEntry example/assets/scripts/controllers/dynamic-map-height.js
+163 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/dynamic-map-height.js',
+163 silly gunzTarPerm   420,
+163 silly gunzTarPerm   436 ]
+164 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-654-marker-events-break-after-added.js
+165 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-654-marker-events-break-after-added.js',
+165 silly gunzTarPerm   420,
+165 silly gunzTarPerm   436 ]
+166 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-663-marker-events-once.js
+167 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-663-marker-events-once.js',
+167 silly gunzTarPerm   420,
+167 silly gunzTarPerm   436 ]
+168 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-686-window-options.js
+169 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-686-window-options.js',
+169 silly gunzTarPerm   420,
+169 silly gunzTarPerm   436 ]
+170 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-725-polyline-dupes.js
+171 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-725-polyline-dupes.js',
+171 silly gunzTarPerm   420,
+171 silly gunzTarPerm   436 ]
+172 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-534-markers-child-destroy.js
+173 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-534-markers-child-destroy.js',
+173 silly gunzTarPerm   420,
+173 silly gunzTarPerm   436 ]
+174 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-728-windows-angular-1_3.js
+175 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-728-windows-angular-1_3.js',
+175 silly gunzTarPerm   420,
+175 silly gunzTarPerm   436 ]
+176 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-522-polyline-no-paths.js
+177 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-522-polyline-no-paths.js',
+177 silly gunzTarPerm   420,
+177 silly gunzTarPerm   436 ]
+178 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-74-markers-events.js
+179 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-74-markers-events.js',
+179 silly gunzTarPerm   420,
+179 silly gunzTarPerm   436 ]
+180 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-507-windows-show-w-marker-broken.js
+181 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-507-windows-show-w-marker-broken.js',
+181 silly gunzTarPerm   420,
+181 silly gunzTarPerm   436 ]
+182 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-751-783-marker-coords-undefined-dragg.js
+183 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-751-783-marker-coords-undefined-dragg.js',
+183 silly gunzTarPerm   420,
+183 silly gunzTarPerm   436 ]
+184 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-504-markers-flash.js
+185 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-753-marker-not-watched.js
+186 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-753-marker-not-watched.js',
+186 silly gunzTarPerm   420,
+186 silly gunzTarPerm   436 ]
+187 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-498-marker-move-loaded.js
+188 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-498-marker-move-loaded.js',
+188 silly gunzTarPerm   420,
+188 silly gunzTarPerm   436 ]
+189 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-755-ng-router.js
+190 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-755-ng-router.js',
+190 silly gunzTarPerm   420,
+190 silly gunzTarPerm   436 ]
+191 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-495-polyline-fit.js
+192 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-495-polyline-fit.js',
+192 silly gunzTarPerm   420,
+192 silly gunzTarPerm   436 ]
+193 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-772-info-window-show-state.js
+194 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-772-info-window-show-state.js',
+194 silly gunzTarPerm   420,
+194 silly gunzTarPerm   436 ]
+195 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-484-markers-self.js
+196 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-484-markers-self.js',
+196 silly gunzTarPerm   420,
+196 silly gunzTarPerm   436 ]
+197 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-798-markerclusterer-perf.js
+198 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-798-markerclusterer-perf.js',
+198 silly gunzTarPerm   420,
+198 silly gunzTarPerm   436 ]
+199 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-482-markers-animation.js
+200 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-482-markers-animation.js',
+200 silly gunzTarPerm   420,
+200 silly gunzTarPerm   436 ]
+201 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-816-multiple-maps-marker.js
+202 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-482-markers-animation-clustering.js
+203 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-482-markers-animation-clustering.js',
+203 silly gunzTarPerm   420,
+203 silly gunzTarPerm   436 ]
+204 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-904-markers-race.js
+205 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-432-markers-fit-clustering.js
+206 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-432-markers-fit-clustering.js',
+206 silly gunzTarPerm   420,
+206 silly gunzTarPerm   436 ]
+207 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-930-polylines-updates.js
+208 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-930-polylines-updates.js',
+208 silly gunzTarPerm   420,
+208 silly gunzTarPerm   436 ]
+209 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-393-cluster-events-mapped.js
+210 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-393-cluster-events-mapped.js',
+210 silly gunzTarPerm   420,
+210 silly gunzTarPerm   436 ]
+211 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-946-markers-update.js
+212 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-382-window-windows-ng-show.js
+213 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-382-window-windows-ng-show.js',
+213 silly gunzTarPerm   420,
+213 silly gunzTarPerm   436 ]
+214 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-975.markerwlabel-customcoords.js
+215 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-975.markerwlabel-customcoords.js',
+215 silly gunzTarPerm   420,
+215 silly gunzTarPerm   436 ]
+216 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-371-polygon-ng-repeat.js
+217 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-371-polygon-ng-repeat.js',
+217 silly gunzTarPerm   420,
+217 silly gunzTarPerm   436 ]
+218 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-978-window-not-open-not-transcluded-marker.js
+219 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-354-window-windows-rerender-content.js
+220 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-354-window-windows-rerender-content.js',
+220 silly gunzTarPerm   420,
+220 silly gunzTarPerm   436 ]
+221 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-979-polygons-race.js
+222 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-979-polygons-race.js',
+222 silly gunzTarPerm   420,
+222 silly gunzTarPerm   436 ]
+223 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-322.js
+224 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-322.js', 420, 436 ]
+225 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-979-polylines-race.js
+226 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-979-polylines-race.js',
+226 silly gunzTarPerm   420,
+226 silly gunzTarPerm   436 ]
+227 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-157-ng-click.js
+228 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-157-ng-click.js',
+228 silly gunzTarPerm   420,
+228 silly gunzTarPerm   436 ]
+229 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-992-marker-disappear.js
+230 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-154-marker-fit.js
+231 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-154-marker-fit.js',
+231 silly gunzTarPerm   420,
+231 silly gunzTarPerm   436 ]
+232 silly gunzTarPerm extractEntry example/assets/scripts/controllers/many-polygons.js
+233 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/many-polygons.js',
+233 silly gunzTarPerm   420,
+233 silly gunzTarPerm   436 ]
+234 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-1009-promise-async.js
+235 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-1009-promise-async.js',
+235 silly gunzTarPerm   420,
+235 silly gunzTarPerm   436 ]
+236 silly gunzTarPerm extractEntry example/assets/scripts/controllers/many-polylines.js
+237 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/many-polylines.js',
+237 silly gunzTarPerm   420,
+237 silly gunzTarPerm   436 ]
+238 silly gunzTarPerm extractEntry example/assets/scripts/controllers/hugedata.js
+239 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/hugedata.js', 420, 436 ]
+240 silly gunzTarPerm extractEntry example/assets/scripts/controllers/marker-anchor.js
+241 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/marker-anchor.js',
+241 silly gunzTarPerm   420,
+241 silly gunzTarPerm   436 ]
+242 silly gunzTarPerm extractEntry example/assets/scripts/controllers/geojson.js
+243 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/geojson.js', 420, 436 ]
+244 silly gunzTarPerm extractEntry example/assets/scripts/controllers/overlay-map-type.js
+245 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/overlay-map-type.js',
+245 silly gunzTarPerm   420,
+245 silly gunzTarPerm   436 ]
+246 silly gunzTarPerm extractEntry example/assets/scripts/controllers/free-draw-polygons.js
+247 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/free-draw-polygons.js',
+247 silly gunzTarPerm   420,
+247 silly gunzTarPerm   436 ]
+248 silly gunzTarPerm extractEntry example/assets/scripts/controllers/search-box.js
+249 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/search-box.js', 420, 436 ]
+250 silly gunzTarPerm extractEntry example/assets/scripts/controllers/example.js
+251 silly gunzTarPerm extractEntry example/assets/scripts/controllers/shapes-lines.js
+252 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/shapes-lines.js',
+252 silly gunzTarPerm   420,
+252 silly gunzTarPerm   436 ]
+253 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-622-many-markers-destroy.js
+254 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-622-many-markers-destroy.js',
+254 silly gunzTarPerm   420,
+254 silly gunzTarPerm   436 ]
+255 silly gunzTarPerm extractEntry example/assets/scripts/controllers/two-maps.js
+256 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/two-maps.js', 420, 436 ]
+257 silly gunzTarPerm extractEntry example/assets/scripts/controllers/issue-624-drawing-manager.js
+258 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/issue-624-drawing-manager.js',
+258 silly gunzTarPerm   420,
+258 silly gunzTarPerm   436 ]
+259 silly gunzTarPerm extractEntry example/assets/scripts/controllers/templates/info.js
+260 silly gunzTarPerm modified mode [ 'example/assets/scripts/controllers/templates/info.js',
+260 silly gunzTarPerm   420,
+260 silly gunzTarPerm   436 ]
+261 silly gunzTarPerm extractEntry example/assets/scripts/mocks/heat-layer.js
+262 silly gunzTarPerm modified mode [ 'example/assets/scripts/mocks/heat-layer.js', 420, 436 ]
+263 silly gunzTarPerm extractEntry example/assets/stylesheets/dynamic-height.css
+264 silly gunzTarPerm modified mode [ 'example/assets/stylesheets/dynamic-height.css', 420, 436 ]
+265 silly gunzTarPerm extractEntry example/assets/stylesheets/example.css
+266 silly gunzTarPerm modified mode [ 'example/assets/stylesheets/example.css', 420, 436 ]
+267 silly gunzTarPerm extractEntry example/assets/stylesheets/geojson.css
+268 silly gunzTarPerm modified mode [ 'example/assets/stylesheets/geojson.css', 420, 436 ]
+269 silly gunzTarPerm extractEntry example/assets/stylesheets/hugedata.css
+270 silly gunzTarPerm modified mode [ 'example/assets/stylesheets/hugedata.css', 420, 436 ]
+271 silly gunzTarPerm extractEntry example/assets/stylesheets/many-maps.css
+272 silly gunzTarPerm extractEntry example/assets/stylesheets/search-box-example.css
+273 silly gunzTarPerm modified mode [ 'example/assets/stylesheets/search-box-example.css', 420, 436 ]
+274 silly gunzTarPerm extractEntry example/assets/templates/info.html
+275 silly gunzTarPerm modified mode [ 'example/assets/templates/info.html', 420, 436 ]
+276 silly gunzTarPerm extractEntry example/assets/templates/issue-755-ng-router.html
+277 silly gunzTarPerm modified mode [ 'example/assets/templates/issue-755-ng-router.html', 420, 436 ]
+278 silly gunzTarPerm extractEntry example/issue-622-many-markers-destroy.html
+279 silly gunzTarPerm modified mode [ 'example/issue-622-many-markers-destroy.html', 420, 436 ]
+280 silly gunzTarPerm extractEntry example/issue-624-drawing-manager.html
+281 silly gunzTarPerm modified mode [ 'example/issue-624-drawing-manager.html', 420, 436 ]
+282 silly gunzTarPerm extractEntry example/issue-654-marker-events-break-after-added.html
+283 silly gunzTarPerm modified mode [ 'example/issue-654-marker-events-break-after-added.html',
+283 silly gunzTarPerm   420,
+283 silly gunzTarPerm   436 ]
+284 silly gunzTarPerm extractEntry example/issue-663-marker-events-once.html
+285 silly gunzTarPerm modified mode [ 'example/issue-663-marker-events-once.html', 420, 436 ]
+286 silly gunzTarPerm extractEntry example/issue-686-window-options.html
+287 silly gunzTarPerm modified mode [ 'example/issue-686-window-options.html', 420, 436 ]
+288 silly gunzTarPerm extractEntry example/issue-725-polyline-dupes.html
+289 silly gunzTarPerm modified mode [ 'example/issue-725-polyline-dupes.html', 420, 436 ]
+290 silly gunzTarPerm extractEntry example/issue-728-windows-angular-1_3.html
+291 silly gunzTarPerm modified mode [ 'example/issue-728-windows-angular-1_3.html', 420, 436 ]
+292 silly gunzTarPerm extractEntry example/issue-74-markers-events.html
+293 silly gunzTarPerm modified mode [ 'example/issue-74-markers-events.html', 420, 436 ]
+294 silly gunzTarPerm extractEntry example/issue-751-783-marker-coords-undefined-dragg.html
+295 silly gunzTarPerm modified mode [ 'example/issue-751-783-marker-coords-undefined-dragg.html',
+295 silly gunzTarPerm   420,
+295 silly gunzTarPerm   436 ]
+296 silly gunzTarPerm extractEntry example/issue-753-marker-not-watched.html
+297 silly gunzTarPerm modified mode [ 'example/issue-753-marker-not-watched.html', 420, 436 ]
+298 silly gunzTarPerm extractEntry example/issue-755-ng-router.html
+299 silly gunzTarPerm modified mode [ 'example/issue-755-ng-router.html', 420, 436 ]
+300 silly gunzTarPerm extractEntry example/issue-772-info-window-show-state.html
+301 silly gunzTarPerm modified mode [ 'example/issue-772-info-window-show-state.html', 420, 436 ]
+302 silly gunzTarPerm extractEntry example/issue-798-markerclusterer-perf.html
+303 silly gunzTarPerm modified mode [ 'example/issue-798-markerclusterer-perf.html', 420, 436 ]
+304 silly gunzTarPerm extractEntry example/issue-816-multiple-maps-marker.html
+305 silly gunzTarPerm extractEntry example/issue-904-markers-race.html
+306 silly gunzTarPerm extractEntry example/issue-930-polygons-updates.html
+307 silly gunzTarPerm modified mode [ 'example/issue-930-polygons-updates.html', 420, 436 ]
+308 silly gunzTarPerm extractEntry example/issue-930-polylines-updates.html
+309 silly gunzTarPerm modified mode [ 'example/issue-930-polylines-updates.html', 420, 436 ]
+310 silly gunzTarPerm extractEntry example/issue-946-markers-update.html
+311 silly gunzTarPerm extractEntry example/issue-975-markerwlabel-customcoords.html
+312 silly gunzTarPerm modified mode [ 'example/issue-975-markerwlabel-customcoords.html', 420, 436 ]
+313 silly gunzTarPerm extractEntry example/issue-978-window-not-open-not-transcluded-marker.html
+314 silly gunzTarPerm extractEntry example/issue-979-polygons-race.html
+315 silly gunzTarPerm extractEntry example/issue-979-polylines-race.html
+316 silly gunzTarPerm modified mode [ 'example/issue-979-polylines-race.html', 420, 436 ]
+317 silly gunzTarPerm extractEntry example/issue-992-marker-disappear.html
+318 silly gunzTarPerm extractEntry example/many-polygons.html
+319 silly gunzTarPerm modified mode [ 'example/many-polygons.html', 420, 436 ]
+320 silly gunzTarPerm extractEntry example/many-polylines.html
+321 silly gunzTarPerm modified mode [ 'example/many-polylines.html', 420, 436 ]
+322 silly gunzTarPerm extractEntry example/marker-anchor.html
+323 silly gunzTarPerm modified mode [ 'example/marker-anchor.html', 420, 436 ]
+324 silly gunzTarPerm extractEntry example/overlay-map-type.html
+325 silly gunzTarPerm modified mode [ 'example/overlay-map-type.html', 420, 436 ]
+326 silly gunzTarPerm extractEntry example/search-box.html
+327 silly gunzTarPerm modified mode [ 'example/search-box.html', 420, 436 ]
+328 silly gunzTarPerm extractEntry example/shapes-lines.html
+329 silly gunzTarPerm modified mode [ 'example/shapes-lines.html', 420, 436 ]
+330 silly gunzTarPerm extractEntry example/issue-621-owl.html
+331 silly gunzTarPerm modified mode [ 'example/issue-621-owl.html', 420, 436 ]
+332 silly gunzTarPerm extractEntry grunt/curl-deps.coffee
+333 silly gunzTarPerm modified mode [ 'grunt/curl-deps.coffee', 420, 436 ]
+334 silly gunzTarPerm extractEntry grunt/jasmine.coffee
+335 silly gunzTarPerm modified mode [ 'grunt/jasmine.coffee', 420, 436 ]
+336 silly gunzTarPerm extractEntry grunt/options.coffee
+337 silly gunzTarPerm extractEntry spec/coffee/bootstrap.coffee
+338 silly gunzTarPerm modified mode [ 'spec/coffee/bootstrap.coffee', 420, 436 ]
+339 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/child/marker-child-model.spec.coffee
+340 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/child/marker-child-model.spec.coffee',
+340 silly gunzTarPerm   420,
+340 silly gunzTarPerm   436 ]
+341 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/child/window-child-model.spec.coffee
+342 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/child/window-child-model.spec.coffee',
+342 silly gunzTarPerm   420,
+342 silly gunzTarPerm   436 ]
+343 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/parent/i-marker-parent.spec.coffee
+344 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/parent/i-marker-parent.spec.coffee',
+344 silly gunzTarPerm   420,
+344 silly gunzTarPerm   436 ]
+345 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/parent/layer-parent-model.spec.coffee
+346 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/parent/layer-parent-model.spec.coffee',
+346 silly gunzTarPerm   420,
+346 silly gunzTarPerm   436 ]
+347 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/parent/map-type-parent-model.spec.coffee
+348 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/parent/map-type-parent-model.spec.coffee',
+348 silly gunzTarPerm   420,
+348 silly gunzTarPerm   436 ]
+349 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/parent/markers-parent-model.spec.coffee
+350 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/parent/markers-parent-model.spec.coffee',
+350 silly gunzTarPerm   420,
+350 silly gunzTarPerm   436 ]
+351 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/parent/markers-parent.spec.coffee
+352 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/parent/markers-parent.spec.coffee',
+352 silly gunzTarPerm   420,
+352 silly gunzTarPerm   436 ]
+353 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/parent/search-box-parent-model.spec.coffee
+354 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/parent/search-box-parent-model.spec.coffee',
+354 silly gunzTarPerm   420,
+354 silly gunzTarPerm   436 ]
+355 silly gunzTarPerm extractEntry spec/coffee/directives/api/models/parent/windows-parent.spec.coffee
+356 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/models/parent/windows-parent.spec.coffee',
+356 silly gunzTarPerm   420,
+356 silly gunzTarPerm   436 ]
+357 silly gunzTarPerm extractEntry spec/coffee/directives/api/control.spec.coffee
+358 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/control.spec.coffee', 420, 436 ]
+359 silly gunzTarPerm extractEntry spec/coffee/directives/api/map.spec.coffee
+360 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/map.spec.coffee', 420, 436 ]
+361 silly gunzTarPerm extractEntry spec/coffee/directives/api/marker.spec.coffee
+362 silly gunzTarPerm extractEntry spec/coffee/directives/api/markers.spec.coffee
+363 silly gunzTarPerm extractEntry spec/coffee/directives/api/drag-zoom.spec.coffee
+364 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/drag-zoom.spec.coffee', 420, 436 ]
+365 silly gunzTarPerm extractEntry spec/coffee/directives/api/options/marker-options.spec.coffee
+366 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/options/marker-options.spec.coffee',
+366 silly gunzTarPerm   420,
+366 silly gunzTarPerm   436 ]
+367 silly gunzTarPerm extractEntry spec/coffee/directives/api/polygon.spec.coffee
+368 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/polygon.spec.coffee', 420, 436 ]
+369 silly gunzTarPerm extractEntry spec/coffee/directives/api/polyline.spec.coffee
+370 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/polyline.spec.coffee', 420, 436 ]
+371 silly gunzTarPerm extractEntry spec/coffee/directives/api/utils/_async.spec.coffee
+372 silly gunzTarPerm extractEntry spec/coffee/directives/api/utils/base-object.spec.coffee
+373 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/utils/base-object.spec.coffee',
+373 silly gunzTarPerm   420,
+373 silly gunzTarPerm   436 ]
+374 silly gunzTarPerm extractEntry spec/coffee/directives/api/utils/events-helper.spec.coffee
+375 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/utils/events-helper.spec.coffee',
+375 silly gunzTarPerm   420,
+375 silly gunzTarPerm   436 ]
+376 silly gunzTarPerm extractEntry spec/coffee/directives/api/utils/gmap-util.spec.coffee
+377 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/utils/gmap-util.spec.coffee',
+377 silly gunzTarPerm   420,
+377 silly gunzTarPerm   436 ]
+378 silly gunzTarPerm extractEntry spec/coffee/directives/api/utils/model-key.spec.coffee
+379 silly gunzTarPerm extractEntry spec/coffee/directives/api/utils/promise.spec.coffee
+380 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/utils/promise.spec.coffee',
+380 silly gunzTarPerm   420,
+380 silly gunzTarPerm   436 ]
+381 silly gunzTarPerm extractEntry spec/coffee/directives/api/utils/prop-map.spec.coffee
+382 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/utils/prop-map.spec.coffee',
+382 silly gunzTarPerm   420,
+382 silly gunzTarPerm   436 ]
+383 silly gunzTarPerm extractEntry spec/coffee/directives/api/window.spec.coffee
+384 silly gunzTarPerm modified mode [ 'spec/coffee/directives/api/window.spec.coffee', 420, 436 ]
+385 silly gunzTarPerm extractEntry spec/coffee/helpers/google-api-mock.coffee
+386 silly gunzTarPerm modified mode [ 'spec/coffee/helpers/google-api-mock.coffee', 420, 436 ]
+387 silly gunzTarPerm extractEntry spec/coffee/helpers/google-map-spec-controller.coffee
+388 silly gunzTarPerm modified mode [ 'spec/coffee/helpers/google-map-spec-controller.coffee',
+388 silly gunzTarPerm   420,
+388 silly gunzTarPerm   436 ]
+389 silly gunzTarPerm extractEntry spec/coffee/helpers/helper.mockEvents.spec.coffee
+390 silly gunzTarPerm modified mode [ 'spec/coffee/helpers/helper.mockEvents.spec.coffee', 420, 436 ]
+391 silly gunzTarPerm extractEntry spec/coffee/helpers/helper.polyline.spec.coffee
+392 silly gunzTarPerm modified mode [ 'spec/coffee/helpers/helper.polyline.spec.coffee', 420, 436 ]
+393 silly gunzTarPerm extractEntry spec/coffee/helpers/initiator.coffee
+394 silly gunzTarPerm modified mode [ 'spec/coffee/helpers/initiator.coffee', 420, 436 ]
+395 silly gunzTarPerm extractEntry spec/coffee/providers/google-map-api-provider.spec.coffee
+396 silly gunzTarPerm modified mode [ 'spec/coffee/providers/google-map-api-provider.spec.coffee',
+396 silly gunzTarPerm   420,
+396 silly gunzTarPerm   436 ]
+397 silly gunzTarPerm extractEntry spec/coffee/usage/underscore.difference.spec.coffee
+398 silly gunzTarPerm modified mode [ 'spec/coffee/usage/underscore.difference.spec.coffee',
+398 silly gunzTarPerm   420,
+398 silly gunzTarPerm   436 ]
+399 silly gunzTarPerm extractEntry spec/coffee/usage/underscore.indexOfObject.spec.coffee
+400 silly gunzTarPerm modified mode [ 'spec/coffee/usage/underscore.indexOfObject.spec.coffee',
+400 silly gunzTarPerm   420,
+400 silly gunzTarPerm   436 ]
+401 silly gunzTarPerm extractEntry spec/coffee/usage/underscore.intersection.spec.coffee
+402 silly gunzTarPerm modified mode [ 'spec/coffee/usage/underscore.intersection.spec.coffee',
+402 silly gunzTarPerm   420,
+402 silly gunzTarPerm   436 ]
+403 silly gunzTarPerm extractEntry spec/coffee/usage/underscore.isEqual.spec.coffee
+404 silly gunzTarPerm modified mode [ 'spec/coffee/usage/underscore.isEqual.spec.coffee', 420, 436 ]
+405 silly gunzTarPerm extractEntry spec/js/.keep
+406 silly gunzTarPerm modified mode [ 'spec/js/.keep', 420, 436 ]
+407 silly gunzTarPerm extractEntry src/coffee/directives/marker.coffee
+408 silly gunzTarPerm modified mode [ 'src/coffee/directives/marker.coffee', 420, 436 ]
+409 silly gunzTarPerm extractEntry src/coffee/directives/api/map.coffee
+410 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/map.coffee', 420, 436 ]
+411 silly gunzTarPerm extractEntry src/coffee/directives/api/circle.coffee
+412 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/circle.coffee', 420, 436 ]
+413 silly gunzTarPerm extractEntry src/coffee/directives/api/drag-zoom.coffee
+414 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/drag-zoom.coffee', 420, 436 ]
+415 silly gunzTarPerm extractEntry src/coffee/directives/api/drawing-manager.coffee
+416 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/drawing-manager.coffee', 420, 436 ]
+417 silly gunzTarPerm extractEntry src/coffee/directives/api/free-draw-polygons.coffee
+418 silly gunzTarPerm extractEntry src/coffee/directives/api/i-circle.coffee
+419 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/i-circle.coffee', 420, 436 ]
+420 silly gunzTarPerm extractEntry src/coffee/directives/api/i-control.coffee
+421 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/i-control.coffee', 420, 436 ]
+422 silly gunzTarPerm extractEntry src/coffee/directives/api/i-drawing-manager.coffee
+423 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/i-drawing-manager.coffee',
+423 silly gunzTarPerm   420,
+423 silly gunzTarPerm   436 ]
+424 silly gunzTarPerm extractEntry src/coffee/directives/api/i-marker.coffee
+425 silly gunzTarPerm extractEntry src/coffee/directives/api/i-polygon.coffee
+426 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/i-polygon.coffee', 420, 436 ]
+427 silly gunzTarPerm extractEntry src/coffee/directives/api/i-polyline.coffee
+428 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/i-polyline.coffee', 420, 436 ]
+429 silly gunzTarPerm extractEntry src/coffee/directives/api/i-rectangle.coffee
+430 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/i-rectangle.coffee', 420, 436 ]
+431 silly gunzTarPerm extractEntry src/coffee/directives/api/i-window.coffee
+432 silly gunzTarPerm extractEntry src/coffee/directives/api/managers/clusterer-marker-manager.coffee
+433 silly gunzTarPerm extractEntry src/coffee/directives/api/managers/marker-manager.coffee
+434 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/managers/marker-manager.coffee',
+434 silly gunzTarPerm   420,
+434 silly gunzTarPerm   436 ]
+435 silly gunzTarPerm extractEntry src/coffee/directives/api/control.coffee
+436 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/control.coffee', 420, 436 ]
+437 silly gunzTarPerm extractEntry src/coffee/directives/api/marker.coffee
+438 silly gunzTarPerm extractEntry src/coffee/directives/api/markers.coffee
+439 silly gunzTarPerm extractEntry src/coffee/directives/api/models/child/base-poly-child-model.coffee
+440 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/child/base-poly-child-model.coffee',
+440 silly gunzTarPerm   420,
+440 silly gunzTarPerm   436 ]
+441 silly gunzTarPerm extractEntry src/coffee/directives/api/models/child/free-draw-polygons-child.coffee
+442 silly gunzTarPerm extractEntry src/coffee/directives/api/models/child/marker-child-model.coffee
+443 silly gunzTarPerm extractEntry src/coffee/directives/api/models/child/polygon-child-model.coffee
+444 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/child/polygon-child-model.coffee',
+444 silly gunzTarPerm   420,
+444 silly gunzTarPerm   436 ]
+445 silly gunzTarPerm extractEntry src/coffee/directives/api/models/child/polyline-child-model.coffee
+446 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/child/polyline-child-model.coffee',
+446 silly gunzTarPerm   420,
+446 silly gunzTarPerm   436 ]
+447 silly gunzTarPerm extractEntry src/coffee/directives/api/models/child/window-child-model.coffee
+448 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/child/window-child-model.coffee',
+448 silly gunzTarPerm   420,
+448 silly gunzTarPerm   436 ]
+449 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/markers-parent-model.coffee
+450 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/circle-parent-mode.coffee
+451 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/parent/circle-parent-mode.coffee',
+451 silly gunzTarPerm   420,
+451 silly gunzTarPerm   436 ]
+452 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/i-marker-parent-model.coffee
+453 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/parent/i-marker-parent-model.coffee',
+453 silly gunzTarPerm   420,
+453 silly gunzTarPerm   436 ]
+454 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/i-window-parent-model.coffee
+455 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/parent/i-window-parent-model.coffee',
+455 silly gunzTarPerm   420,
+455 silly gunzTarPerm   436 ]
+456 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/layer-parent-model.coffee
+457 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/parent/layer-parent-model.coffee',
+457 silly gunzTarPerm   420,
+457 silly gunzTarPerm   436 ]
+458 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/map-type-parent-model.coffee
+459 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/parent/map-type-parent-model.coffee',
+459 silly gunzTarPerm   420,
+459 silly gunzTarPerm   436 ]
+460 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/drawing-manager-parent-model.coffee
+461 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/parent/drawing-manager-parent-model.coffee',
+461 silly gunzTarPerm   420,
+461 silly gunzTarPerm   436 ]
+462 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/polygons-parent-model.coffee
+463 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/polylines-parent-model.coffee
+464 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/rectangle-parent-model.coffee
+465 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/parent/rectangle-parent-model.coffee',
+465 silly gunzTarPerm   420,
+465 silly gunzTarPerm   436 ]
+466 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/search-box-parent-model.coffee
+467 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/models/parent/search-box-parent-model.coffee',
+467 silly gunzTarPerm   420,
+467 silly gunzTarPerm   436 ]
+468 silly gunzTarPerm extractEntry src/coffee/directives/api/models/parent/windows-parent-model.coffee
+469 silly gunzTarPerm extractEntry src/coffee/directives/api/options/builders/common-options-builder.coffee
+470 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/options/builders/common-options-builder.coffee',
+470 silly gunzTarPerm   420,
+470 silly gunzTarPerm   436 ]
+471 silly gunzTarPerm extractEntry src/coffee/directives/api/options/builders/options-builders.coffee
+472 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/options/builders/options-builders.coffee',
+472 silly gunzTarPerm   420,
+472 silly gunzTarPerm   436 ]
+473 silly gunzTarPerm extractEntry src/coffee/directives/api/options/marker-options.coffee
+474 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/options/marker-options.coffee',
+474 silly gunzTarPerm   420,
+474 silly gunzTarPerm   436 ]
+475 silly gunzTarPerm extractEntry src/coffee/directives/api/plural.coffee
+476 silly gunzTarPerm extractEntry src/coffee/directives/api/polygon.coffee
+477 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/polygon.coffee', 420, 436 ]
+478 silly gunzTarPerm extractEntry src/coffee/directives/api/polygons.coffee
+479 silly gunzTarPerm extractEntry src/coffee/directives/api/polyline.coffee
+480 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/polyline.coffee', 420, 436 ]
+481 silly gunzTarPerm extractEntry src/coffee/directives/api/polylines.coffee
+482 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/polylines.coffee', 420, 436 ]
+483 silly gunzTarPerm extractEntry src/coffee/directives/api/rectangle.coffee
+484 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/rectangle.coffee', 420, 436 ]
+485 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/is-ready.coffee
+486 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/is-ready.coffee', 420, 436 ]
+487 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/_async.coffee
+488 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/child-events.coffee
+489 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/child-events.coffee',
+489 silly gunzTarPerm   420,
+489 silly gunzTarPerm   436 ]
+490 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/ctrl-handle.coffee
+491 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/ctrl-handle.coffee',
+491 silly gunzTarPerm   420,
+491 silly gunzTarPerm   436 ]
+492 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/events-helper.coffee
+493 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/events-helper.coffee',
+493 silly gunzTarPerm   420,
+493 silly gunzTarPerm   436 ]
+494 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/fit-helper.coffee
+495 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/fit-helper.coffee', 420, 436 ]
+496 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/gmap-util.coffee
+497 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/gmap-util.coffee', 420, 436 ]
+498 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/base-object.coffee
+499 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/base-object.coffee',
+499 silly gunzTarPerm   420,
+499 silly gunzTarPerm   436 ]
+500 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/linked.coffee
+501 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/linked.coffee', 420, 436 ]
+502 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/logger.coffee
+503 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/logger.coffee', 420, 436 ]
+504 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/model-key.coffee
+505 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/models-watcher.coffee
+506 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/promise.coffee
+507 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/promise.coffee', 420, 436 ]
+508 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/prop-map.coffee
+509 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/prop-map.coffee', 420, 436 ]
+510 silly gunzTarPerm extractEntry src/coffee/directives/api/utils/property-action.coffee
+511 silly gunzTarPerm modified mode [ 'src/coffee/directives/api/utils/property-action.coffee',
+511 silly gunzTarPerm   420,
+511 silly gunzTarPerm   436 ]
+512 silly gunzTarPerm extractEntry src/coffee/directives/api/window.coffee
+513 silly gunzTarPerm extractEntry src/coffee/directives/api/windows.coffee
+514 silly gunzTarPerm extractEntry src/coffee/directives/control.coffee
+515 silly gunzTarPerm modified mode [ 'src/coffee/directives/control.coffee', 420, 436 ]
+516 silly gunzTarPerm extractEntry src/coffee/directives/controllers/polyline-display.coffee
+517 silly gunzTarPerm modified mode [ 'src/coffee/directives/controllers/polyline-display.coffee',
+517 silly gunzTarPerm   420,
+517 silly gunzTarPerm   436 ]
+518 silly gunzTarPerm extractEntry src/coffee/directives/drag-zoom.coffee
+519 silly gunzTarPerm modified mode [ 'src/coffee/directives/drag-zoom.coffee', 420, 436 ]
+520 silly gunzTarPerm extractEntry src/coffee/directives/drawing-manager.coffee
+521 silly gunzTarPerm modified mode [ 'src/coffee/directives/drawing-manager.coffee', 420, 436 ]
+522 silly gunzTarPerm extractEntry src/coffee/directives/free-draw-polygons.coffee
+523 silly gunzTarPerm modified mode [ 'src/coffee/directives/free-draw-polygons.coffee', 420, 436 ]
+524 silly gunzTarPerm extractEntry src/coffee/directives/layer.coffee
+525 silly gunzTarPerm modified mode [ 'src/coffee/directives/layer.coffee', 420, 436 ]
+526 silly gunzTarPerm extractEntry src/coffee/directives/map-type.coffee
+527 silly gunzTarPerm modified mode [ 'src/coffee/directives/map-type.coffee', 420, 436 ]
+528 silly gunzTarPerm extractEntry src/coffee/directives/map.coffee
+529 silly gunzTarPerm modified mode [ 'src/coffee/directives/map.coffee', 420, 436 ]
+530 silly gunzTarPerm extractEntry src/coffee/directives/circle.coffee
+531 silly gunzTarPerm modified mode [ 'src/coffee/directives/circle.coffee', 420, 436 ]
+532 silly gunzTarPerm extractEntry src/coffee/directives/markers.coffee
+533 silly gunzTarPerm modified mode [ 'src/coffee/directives/markers.coffee', 420, 436 ]
+534 silly gunzTarPerm extractEntry src/coffee/directives/polygon.coffee
+535 silly gunzTarPerm modified mode [ 'src/coffee/directives/polygon.coffee', 420, 436 ]
+536 silly gunzTarPerm extractEntry src/coffee/directives/polygons.coffee
+537 silly gunzTarPerm modified mode [ 'src/coffee/directives/polygons.coffee', 420, 436 ]
+538 silly gunzTarPerm extractEntry src/coffee/directives/polyline.coffee
+539 silly gunzTarPerm modified mode [ 'src/coffee/directives/polyline.coffee', 420, 436 ]
+540 silly gunzTarPerm extractEntry src/coffee/directives/polylines.coffee
+541 silly gunzTarPerm modified mode [ 'src/coffee/directives/polylines.coffee', 420, 436 ]
+542 silly gunzTarPerm extractEntry src/coffee/directives/rectangle.coffee
+543 silly gunzTarPerm modified mode [ 'src/coffee/directives/rectangle.coffee', 420, 436 ]
+544 silly gunzTarPerm extractEntry src/coffee/directives/search-box.coffee
+545 silly gunzTarPerm modified mode [ 'src/coffee/directives/search-box.coffee', 420, 436 ]
+546 silly gunzTarPerm extractEntry src/coffee/directives/window.coffee
+547 silly gunzTarPerm modified mode [ 'src/coffee/directives/window.coffee', 420, 436 ]
+548 silly gunzTarPerm extractEntry src/coffee/directives/windows.coffee
+549 silly gunzTarPerm modified mode [ 'src/coffee/directives/windows.coffee', 420, 436 ]
+550 silly gunzTarPerm extractEntry src/coffee/extensions/google.maps.coffee
+551 silly gunzTarPerm modified mode [ 'src/coffee/extensions/google.maps.coffee', 420, 436 ]
+552 silly gunzTarPerm extractEntry src/coffee/extensions/lodash.coffee
+553 silly gunzTarPerm modified mode [ 'src/coffee/extensions/lodash.coffee', 420, 436 ]
+554 silly gunzTarPerm extractEntry src/coffee/extensions/string.coffee
+555 silly gunzTarPerm modified mode [ 'src/coffee/extensions/string.coffee', 420, 436 ]
+556 silly gunzTarPerm extractEntry src/coffee/module.coffee
+557 silly gunzTarPerm modified mode [ 'src/coffee/module.coffee', 420, 436 ]
+558 silly gunzTarPerm extractEntry src/coffee/providers/map-loader.coffee
+559 silly gunzTarPerm modified mode [ 'src/coffee/providers/map-loader.coffee', 420, 436 ]
+560 silly gunzTarPerm extractEntry src/coffee/utils/add-events.coffee
+561 silly gunzTarPerm modified mode [ 'src/coffee/utils/add-events.coffee', 420, 436 ]
+562 silly gunzTarPerm extractEntry src/coffee/utils/array-sync.coffee
+563 silly gunzTarPerm modified mode [ 'src/coffee/utils/array-sync.coffee', 420, 436 ]
+564 silly gunzTarPerm extractEntry src/coffee/utils/chrome-fixes.coffee
+565 silly gunzTarPerm modified mode [ 'src/coffee/utils/chrome-fixes.coffee', 420, 436 ]
+566 silly gunzTarPerm extractEntry src/js/.gitkeep
+567 silly gunzTarPerm modified mode [ 'src/js/.gitkeep', 420, 436 ]
+568 silly gunzTarPerm extractEntry src/js/directives/.gitkeep
+569 silly gunzTarPerm modified mode [ 'src/js/directives/.gitkeep', 420, 436 ]
+570 silly gunzTarPerm extractEntry src/js/directives/api/managers/.gitkeep
+571 silly gunzTarPerm modified mode [ 'src/js/directives/api/managers/.gitkeep', 420, 436 ]
+572 silly gunzTarPerm extractEntry src/js/directives/api/models/.gitkeep
+573 silly gunzTarPerm modified mode [ 'src/js/directives/api/models/.gitkeep', 420, 436 ]
+574 silly gunzTarPerm extractEntry src/js/directives/api/utils/.gitkeep
+575 silly gunzTarPerm modified mode [ 'src/js/directives/api/utils/.gitkeep', 420, 436 ]
+576 silly gunzTarPerm extractEntry src/js/extensions/markerclusterer.js
+577 silly gunzTarPerm modified mode [ 'src/js/extensions/markerclusterer.js', 420, 436 ]
+578 silly gunzTarPerm extractEntry src/js/wrapped/google-maps-util-v3.js
+579 silly gunzTarPerm modified mode [ 'src/js/wrapped/google-maps-util-v3.js', 420, 436 ]
+580 silly gunzTarPerm extractEntry src/js/wrapped/uuid.core.js
+581 silly gunzTarPerm modified mode [ 'src/js/wrapped/uuid.core.js', 420, 436 ]
+582 silly gunzTarPerm extractEntry src/js/wrapped/webpack/data-structures.js
+583 silly gunzTarPerm modified mode [ 'src/js/wrapped/webpack/data-structures.js', 420, 436 ]
+584 silly gunzTarPerm extractEntry website_libs/dev_deps.js
+585 info preinstall angular-google-maps@2.0.12
+586 silly install resolved []
+587 verbose about to build /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+588 info build /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+589 verbose linkStuff [ false,
+589 verbose linkStuff   false,
+589 verbose linkStuff   false,
+589 verbose linkStuff   '/home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules' ]
+590 info linkStuff angular-google-maps@2.0.12
+591 verbose linkBins angular-google-maps@2.0.12
+592 verbose linkMans angular-google-maps@2.0.12
+593 verbose rebuildBundles angular-google-maps@2.0.12
+594 info install angular-google-maps@2.0.12
+595 info postinstall angular-google-maps@2.0.12
+596 verbose unsafe-perm in lifecycle true
+597 info angular-google-maps@2.0.12 Failed to exec postinstall script
+598 verbose unlock done using /home/jormar/.npm/_locks/angular-google-maps-12fa09bf47fcf971.lock for /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+599 verbose stack Error: angular-google-maps@2.0.12 postinstall: `bower install && grunt curl`
+599 verbose stack Exit status 3
+599 verbose stack     at EventEmitter.<anonymous> (/home/jormar/.nvm/v0.10.32/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+599 verbose stack     at EventEmitter.emit (events.js:98:17)
+599 verbose stack     at ChildProcess.<anonymous> (/home/jormar/.nvm/v0.10.32/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+599 verbose stack     at ChildProcess.emit (events.js:98:17)
+599 verbose stack     at maybeClose (child_process.js:756:16)
+599 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:823:5)
+600 verbose pkgid angular-google-maps@2.0.12
+601 verbose cwd /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev
+602 error Linux 3.13.0-45-generic
+603 error argv "node" "/home/jormar/.nvm/current/bin/npm" "install" "angular-google-maps" "--save-dev"
+604 error node v0.10.32
+605 error npm  v2.4.1
+606 error code ELIFECYCLE
+607 error angular-google-maps@2.0.12 postinstall: `bower install && grunt curl`
+607 error Exit status 3
+608 error Failed at the angular-google-maps@2.0.12 postinstall script 'bower install && grunt curl'.
+608 error This is most likely a problem with the angular-google-maps package,
+608 error not with npm itself.
+608 error Tell the author that this fails on your system:
+608 error     bower install && grunt curl
+608 error You can get their info via:
+608 error     npm owner ls angular-google-maps
+608 error There is likely additional logging output above.
+609 verbose exit [ 1, true ]
+610 verbose unbuild node_modules/angular-google-maps
+611 info preuninstall angular-google-maps@2.0.12
+612 info uninstall angular-google-maps@2.0.12
+613 verbose unbuild rmStuff angular-google-maps@2.0.12 from /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules
+614 info postuninstall angular-google-maps@2.0.12
+615 verbose gentlyRm vacuuming /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+616 silly gentlyRm purging /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules/angular-google-maps
+617 silly gentlyRm quitting because other entries in /home/jormar/htdocs/omniumie/nayru/android/nayrumovil/www-dev/node_modules
