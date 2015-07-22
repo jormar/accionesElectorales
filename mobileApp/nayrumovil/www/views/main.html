@@ -1,0 +1,10 @@
+<!--
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.e75af8f5.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+--> <div class="row marketing"> <form ng-submit="sendAction()"> <div class="form-group"> <label for="action">Acción</label> <input class="form-control" id="action" placeholder="Una acción" ng-model="action"> </div> <div class="form-group"> <label for="author">Actor</label> <input class="form-control" id="author" placeholder="El actor" ng-model="author"> </div> <div class="text-right"> <div ng-if="success" class="alert alert-success"> {{success}} </div> <div ng-if="error" class="alert alert-danger"> {{error}} </div> <button type="submit" class="btn btn-danger left">Guardar</button> </div> </form> <h4>Coordenadas Generadas Aleatoriamente</h4> <p> Lat: {{latitude}} <br> Long: {{longitude}} </p> </div>
